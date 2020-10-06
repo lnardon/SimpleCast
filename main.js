@@ -1,0 +1,3 @@
+function playText() {}
+
+function stopText() {}
