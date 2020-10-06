@@ -1,3 +1,10 @@
-function playText() {}
+const speaker = new SpeechSynthesisUtterance();
 
-function stopText() {}
+function playText() {
+  speaker.text = document.getElementById("text").value;
+  speechSynthesis.speak(speaker);
+}
+
+function stopText() {
+  speaker.stop();
+}
