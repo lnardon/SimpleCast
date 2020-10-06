@@ -3,10 +3,14 @@
   padding: 0;
 }
 
-html,
-body {
+html {
   width: 100vw;
   height: 100vh;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
   font-family: "Sansita Swashed", cursive;
   display: flex;
   flex-direction: column;
@@ -14,13 +18,24 @@ body {
   background-color: #232323;
 }
 
+.userTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 90%;
+}
+
 .subtitle {
   font-size: 1.25rem;
   color: #fafafa;
+  width: 100%;
+  margin-left: 1rem;
 }
 
 textarea {
-  width: 400px;
+  max-width: 400px;
+  width: 90%;
   height: 300px;
   resize: none;
   border-radius: 0.5rem;
@@ -35,7 +50,8 @@ textarea {
   display: flex;
   justify-content: center;
   margin-top: 5rem;
-  width: 450px;
+  max-width: 450px;
+  width: 90%;
   flex-wrap: wrap;
   margin-bottom: 2rem;
 }
@@ -69,4 +85,10 @@ textarea {
 
 #stopBtn {
   background-color: #0439d9;
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 3rem;
+  }
 }
