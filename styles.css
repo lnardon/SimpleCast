@@ -8,4 +8,21 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: "Sansita Swashed", cursive;
+  display: flex;
+  justify-content: center;
+  background-color: #232323;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  width: 450px;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fafafa;
 }
