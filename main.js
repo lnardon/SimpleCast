@@ -8,3 +8,8 @@ function playText() {
 function stopText() {
   speaker.stop();
 }
+
+function handleSpeedChange() {
+  let speed = document.getElementById("speed").value;
+  speaker.rate = parseFloat(speed);
+}
