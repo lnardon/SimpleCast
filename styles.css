@@ -6,16 +6,21 @@
 html {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
   width: 100%;
   min-height: 100%;
+  max-width: 450px;
   font-family: "Sansita Swashed", cursive;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #232323;
+  justify-content: center;
+  background-color: #171717;
 }
 
 .userTextContainer {
@@ -23,7 +28,7 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: 450px;
-  width: 90%;
+  width: 100%;
 }
 
 .subtitle {
@@ -33,7 +38,6 @@ body {
 }
 
 textarea {
-  max-width: 450px;
   width: 100%;
   height: 300px;
   resize: none;
@@ -57,14 +61,16 @@ textarea {
 }
 
 .title {
-  font-size: 5rem;
+  text-align: center;
+  font-size: 4rem;
+  line-height: 4rem;
   font-weight: bold;
   color: #fafafa;
+  margin-bottom: 2rem;
 }
 
 .audioSettingContainer {
   width: 100%;
-  max-width: 450px;
   display: flex;
   flex-direction: column;
 }
@@ -82,24 +88,25 @@ textarea {
 }
 
 .controlsContainer {
+  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 .controlBtn {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
   font-size: 1rem;
   font-weight: bold;
   color: #fafafa;
   cursor: pointer;
   border: none;
   outline: none;
-  border-radius: 0.25rem;
+  border-radius: 0.125rem;
 }
 
 #playBtn {
   background-color: #f20732;
-  margin-right: 2rem;
 }
 
 #stopBtn {

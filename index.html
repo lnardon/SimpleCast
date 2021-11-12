@@ -11,9 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="mic.png" type="image/x-icon" />
     <meta
       name="description"
-      content="Simple Cast is a website that transforms a text into a podcast"
+      content="Transform any text into an audio so you can listen to it like a podcast."
     />
     <title>Simple Cast</title>
   </head>
@@ -23,29 +24,41 @@
     </div>
 
     <div class="userTextContainer">
-      <h3 class="subtitle">Paste the text below:</h3>
-      <textarea name="" id="text"></textarea>
-    </div>
-
-    <div class="audioSettingContainer">
-      <div class="speedDiv">
-        <h4 class="controlTitle">Speed:</h4>
-        <input
-          type="range"
-          name=""
-          id="speed"
-          min="1"
-          max="3"
-          step=".1"
-          onchange="handleSpeedChange()"
-        />
-      </div>
+      <textarea
+        name=""
+        id="text"
+        placeholder="Place you text here.."
+      ></textarea>
     </div>
 
     <div class="controlsContainer">
-      <button class="controlBtn" onclick="playText()" id="playBtn">Play</button>
-      <button class="controlBtn" onclick="stopText()" id="stopBtn">Stop</button>
+      <div style="display: flex; margin-bottom: 1rem">
+        <img
+          src="./settings.png"
+          alt="Settings Icon"
+          style="height: 35px; filter: invert(100); margin-right: 1rem"
+        />
+        <h2 style="color: #f1f1f1">Settings</h2>
+      </div>
+
+      <div class="audioSettingContainer">
+        <div class="speedDiv">
+          <h4 class="controlTitle">Speed:</h4>
+          <input
+            type="range"
+            name=""
+            id="speed"
+            min="0.5"
+            max="10"
+            step=".1"
+            value="1"
+            onchange="handleSpeedChange()"
+          />
+        </div>
+      </div>
     </div>
+    <button class="controlBtn" onclick="playText()" id="playBtn">Play</button>
+    <button class="controlBtn" onclick="stopText()" id="stopBtn">Stop</button>
     <script src="main.js"></script>
   </body>
 </html>
